@@ -3,7 +3,7 @@ const asyncHandler = require('express-async-handler')
 const Profile = require('../models/profileModel')
 
 const getProfiles = asyncHandler(async (req, res) => {
-  const profiles = await Profile.find()
+  const profiles = await Profile.find().populate('Frameworks').populate('hobbies')
   res.status(200).json(profiles)
 })
 

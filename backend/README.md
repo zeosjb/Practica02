@@ -17,9 +17,7 @@ Asegúrate de tener instalado [Node.js](https://nodejs.org/) en tu máquina.
 3. Agrega las variables de entorno necesarias. Puedes consultar el archivo `.env.example` para obtener un ejemplo.
 
 ## Endpoints/API
-1. `/api/users` Tiene los datos del usuario.
-2. `/api/tools` Tiene los datos de las herramientas.
-3. `/api/hobbies` Tiene los datos de los hobbies.
+1. `/api/profile` Tiene los datos del usuario.
 
 ## Uso
 Para iniciar la aplicación, ejecuta el siguiente comando:

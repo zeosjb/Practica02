@@ -1,4 +1,6 @@
 const mongoose = require('mongoose')
+const hobbieModel = require('../models/hobbieModel')
+const frameworkModel = require('../models/frameworkModel')
 
 const profileSchema = mongoose.Schema({
     name: {
@@ -32,13 +34,13 @@ const profileSchema = mongoose.Schema({
     Frameworks: [
         {
             type: mongoose.Schema.Types.ObjectId,
-            ref: "frameworkModel",
+            ref: "Framework",
         }
     ],
     hobbies: [
         {
             type: mongoose.Schema.Types.ObjectId,
-            ref: "hobbieModel",
+            ref: "Hobbie",
         }
     ]
 }, {

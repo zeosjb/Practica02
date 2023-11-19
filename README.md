@@ -10,4 +10,4 @@ Asegúrate de tener instalado [Node.js](https://nodejs.org/) en tu máquina.
 1. Clona este repositorio: `git clone `
 2. Ingresa al directorio del proyecto backend: `cd backend`
 3. Ingresa al directorio del proyecto frontend: `cd frontend`
-4. ISigue las instrucciones de los README de ambas carpetas.
+4. Sigue las instrucciones de los README de ambas carpetas.
