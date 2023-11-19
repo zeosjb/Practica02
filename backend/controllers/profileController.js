@@ -17,6 +17,17 @@ const setProfile = asyncHandler(async (req, res) => {
     city: req.body.city,
     country: req.body.country
   })
+
+  if (req.body.Frameworks && req.body.Frameworks.length > 0) {
+    profile.Frameworks = req.body.Frameworks;
+  }
+
+  if (req.body.hobbies && req.body.hobbies.length > 0) {
+    profile.hobbies = req.body.hobbies;
+  }
+
+  await profile.save();
+
   res.status(200).json(profile)
 })
 
